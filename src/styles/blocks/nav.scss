@@ -1,0 +1,54 @@
+.nav {
+  display: none;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  &__item {
+    margin-left: 20px;
+  }
+
+  &__link {
+    padding: 5px 8px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    color: #45494F;
+    cursor: pointer;
+
+    &--active {
+      border: 2px solid #EAEDF5;
+      border-radius: 8px;
+
+      color: #2E75FF;
+    }
+
+    &:active {
+      border: 2px solid #EAEDF5;
+      border-radius: 8px;
+
+      color: #2E75FF;
+    }
+
+    &:hover{
+      transition: 0.3s;
+      color: #2E75FF;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    border: solid #fff;
+    
+    transform: rotate(-180deg);
+    cursor: pointer;
+  }
+
+  @include onDesctop {
+    display: block;
+  }
+}

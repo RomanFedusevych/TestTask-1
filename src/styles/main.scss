@@ -1,7 +1,19 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import './utils/fonts.scss';
+@import './utils/mixins.scss';
+@import './utils/resets.scss';
 
-body {
-  background: $c-gray;
-}
+@import './blocks/header.scss';
+@import './blocks/page.scss';
+@import './blocks/menu.scss';
+@import './blocks/nav.scss';
+@import './blocks/container.scss';
+@import './blocks/flex.scss';
+@import './blocks/luftkondensierte.scss';
+@import './blocks/standards.scss';
+@import './blocks/spezialitat.scss';
+@import './blocks/vorteile.scss';
+@import './blocks/hauptmerkmale.scss';
+@import './blocks/bilder.scss';
+@import './blocks/slider.scss';
+@import './blocks/kontakt.scss';
+@import './blocks/footer.scss';

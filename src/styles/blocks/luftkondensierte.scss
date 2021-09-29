@@ -1,0 +1,160 @@
+.luftkondensierte {
+  &__container {
+    padding: 20px;
+    
+    @include onDesctop {
+      padding: 0 100px;
+    }
+  }
+
+  &__top {
+    @include onDesctop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom {
+    overflow: hidden;
+
+    @include onDesctop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-family: 'BBCReithSans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+
+    font-size: 34px;
+    letter-spacing: -0.4px;
+
+    color: #1652AC;
+
+    margin-bottom: 30px;
+
+    @include onDesctop {
+      text-align: start;
+      font-size: 48px;
+    }
+  }
+
+  &__line {
+    width: 227px;
+    margin: 0 auto;
+    border: 7px solid #EDEFF3;
+
+    @include onDesctop {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    background: url(../images/pageImg/AirColled2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    @include onDesctop {
+      position: relative;
+      top: -100px;
+      width: 650px;
+      height: 650px;
+    }
+  }
+
+  &__miniTitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.004em;
+    color: #020303;
+
+    @include onDesctop {
+      display: none;
+    }
+  }
+
+  &__miniTitleDesctop {
+    display: none;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.004em;
+    color: #020303;
+
+    @include onDesctop {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__multiImg {
+    background: url(../images/pageImg/Multistage.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 100%;
+    height: 350px;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    @include onDesctop {
+      position: relative;
+      top: -40px;
+      width: 600px;
+      height: 480px;
+    }
+  }
+
+  &__title2 {
+    font-family: 'BBCReithSans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: 2.42px;
+
+    color: #1652AC;
+
+    transform: rotate(0.02deg);
+  }
+
+  &__miniTitle2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+
+    color: #45494F;
+
+    @include onDesctop {
+      width: 450px;
+    }
+  }
+}

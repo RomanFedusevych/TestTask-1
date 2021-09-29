@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  @include onDesctop {
+    padding: 0 100px;
+  }
+}

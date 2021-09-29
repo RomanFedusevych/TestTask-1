@@ -1,0 +1,82 @@
+.slider {
+  height: 610px;
+  margin-bottom: 30px;
+
+  @include onDesctop {
+    margin-bottom: 30px;
+    width: 610px;
+    height: 800px;
+  }
+
+  &__control {
+    @include onDesctop {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      gap: 50px;
+      width: 610px;
+    }
+  }
+
+  &__arrows {
+    display: none;
+
+    @include onDesctop {
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+  &__arrow {
+    width: 126px;
+    height: 78px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 21px rgba(64, 68, 75, 0.14);
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: rgb(189, 186, 186);
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+  }
+
+  &__dot {
+    align-self: center;
+    width: 9px;
+    height: 9px;
+
+    background: #80ABFF;
+    opacity: 0.35;
+    border: 1px solid #0045AC;
+    border-radius: 50%;
+  
+    box-sizing: border-box;
+    transform: rotate(-180deg);
+  }
+}
+
+@for $i from 1 through 3 {
+  .picture-#{$i} {
+    background: url("../images/slider/picture-#{$i}.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include onDesctop {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

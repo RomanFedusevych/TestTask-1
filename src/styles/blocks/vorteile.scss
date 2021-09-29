@@ -1,0 +1,97 @@
+.vorteile {
+  background-color: #FBFBFC;
+  padding: 40px 20px 0;
+
+  &__title {
+    font-family: 'BBCReithSans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+
+    letter-spacing: 4.42px;
+
+    color: #020303;
+
+    margin-bottom: 40px;
+
+    @include onDesctop {
+      font-size: 28px;
+    }
+  }
+
+  &__tabsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__tabs {
+    @include onDesctop {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__tab {
+    display: flex;
+    gap: 40px;
+    height: 140px;
+    width: 100%;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+
+    margin-top: 8px;
+    padding: 35px 30px 35px 35px;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &--oppacity {
+      display: none;
+
+      @include onDesctop {
+        display: block;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 150px;
+
+    align-self: center;
+    padding-right: 20px;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    
+    color: #45494F;
+
+    @include onDesctop {
+      position: static;
+    }
+
+    &--pos{
+      @include onDesctop {
+        position: relative;
+        left: -20px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    top: 10px;
+  }
+}

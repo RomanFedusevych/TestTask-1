@@ -1,0 +1,104 @@
+.bilder {
+  background-color: #FBFBFC;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 20px;
+  }
+
+  &__sliderContainer {
+    margin: 0 auto;
+    max-width: 610px;
+
+    margin-bottom: 42px;
+  }
+  &__title {
+    font-family: 'BBCReithSans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: 4.42px;
+
+    color: #020303;
+    text-align: center;
+
+    margin-bottom: 18px;
+  }
+
+  &__title2 {
+    font-family: 'BBCReithSans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: 2.42px;
+
+    color: #020303;
+
+    margin-bottom: 20px;
+
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+    margin-bottom: 8px;
+
+    @include onDesctop {
+      flex-direction: row;
+    }
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: center;
+
+    height: 64px;
+    padding-top: 13px;
+
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+    border-radius: 12px;
+
+    font-family: 'BBCReithSans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+
+    text-transform: uppercase;
+    letter-spacing: 1.42px;
+
+    color: #FAFBFE;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      background: #044099;
+    }
+
+    @include onDesctop {
+      width: 100vw;
+    }
+
+    &--oppacity {
+      display: none;
+
+      @include onDesctop {
+        display: block;
+        opacity: 0;
+      }
+    }
+  }
+}

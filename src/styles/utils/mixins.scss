@@ -1,0 +1,12 @@
+@mixin onDesctop {
+  @media (min-width: 1125px) {
+    @content;
+  }
+}
+
+@mixin notoSans {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}

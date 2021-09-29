@@ -1,0 +1,60 @@
+.standards {
+  @include onDesctop {
+    display: flex;
+  }
+  &__img {
+    background: url(../images/pageImg/asv3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 505px;
+
+    @include onDesctop {
+      height: 730px;
+      width: 540px;
+    }
+  }
+
+  &__text {
+    height: 600px;
+    padding: 40px 20px 0;
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+
+    @include onDesctop {
+      height: 730px;
+      width: 70%;
+
+      padding: 150px 220px 0 150px;
+    }
+  }
+
+  &__title {
+    font-family: 'BBCReithSans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+
+    text-align: start;
+    letter-spacing: 2.42px;
+
+    color: #FBFDFF;
+  }
+
+  &__miniTitle {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: -0.4px;
+
+    color: #FBFDFF;
+
+    @include onDesctop {
+      width: 400px;
+    }
+  }
+}
